@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>FACTS-O-SAURUS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        .course-button:nth-child(1) {
+            background-color: #6b5b5bed;
+            color: #ffffff;
+            font-size: 18px;
+            height: 75px;
+        }
+        .course-button:nth-child(2) {
+            background-color: #6b5b5bed;
+            color: #ffffff;
+            font-size: 18px;
+            height: 75px;
+        }
+    </style>
+</head>
+
+<body>
+
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="images/rowdyhackslogo.webp"></a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="about.html" class="handjet-custom">ABOUT</a></li>
+                <li><a href="asaoverview.pdf" class="handjet-custom">CONTACT OUR TEAM</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<div class="text-box">
+    <h1>FACTS-O-SAURUS: <i>JURASSIC PARK EDITION</i></h1>
+    <p><b>ARE YOU A HUGE FAN OF THE JURASSIC PARK MOVIE SAGA? YOU WILL 
+        BE ABLE TO DELVE DEEPER INTO A FEW FACTS REGARDING THE SAGA HERE!
+    </b></p>
+    <a href="https://screenrant.com/complete-jurassic-park-world-timeline-explained/" class="hero-btn">COMPLETE JURASSIC PARK TIMELINE EXPLAINED: CHECK IT OUT!</a>
+</div>
+
+</section>
+
+<!----------------------------------------------->
+
+<section class="data-analysis">
+    <h1 class="movie-facts">EVERY MOVIE STAT YOU NEED TO KNOW IS HERE!</h1>
+
+    <div class="row">
+        <div class="course-button">
+            <a href="analysis/piechartone.png" class="button-link" onclick="displayImage('image2')"><b>DISTRIBUTION OF DINOSAUR DIETS FOR DINOSAURS ACROSS THE ENTIRE MOVIE SAGA</b></a>
+        </div>
+        <div class="course-button">
+            <a href="analysis/piecharttwo.png" class="button-link" onclick="displayImage('image2')"><b>DISTRIBUTION OF TYPES <br> OF DINOSAURS FOR THOSE PRESENT ACROSS THE SAGA</b></a>
+        </div>
+    </div>
+
+</section>
+
+<script>
+    function displayImage(imageId) {
+        var image = document.getElementById(imageId);
+        if (image.style.display === "none") {
+            image.style.display = "block";
+        } else {
+            image.style.display = "none";
+        }
+    }
+</script>
+
+<!----------------------------------------------->
+
+<section class="infographic">
+    <h1 class="infographic-heading"><b>DISCLAIMER: INFOGRAPHIC UNDERNEATH WAS CREATED WITH ADOBE EXPRESS</b></h1>
+
+    <div class="row">
+        <img src="images/dinographic.png" alt="Picture created with Adobe Express" class="infographic-image">
+    </div>
+</section>
+
+</body>
+
+</html>

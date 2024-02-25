@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(#75624dc5,#6b5b5bed),url(images/background.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.handjet-custom, .handjet-custom a{
+    font-family: "Handjet", sans-serif;
+    text-decoration: none;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings:
+        "ELGR" 1,
+        "ELSH" 2;
+}
+
+nav{
+    display: flex;
+    padding: 1% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 150px;
+    height: auto;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 10px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #6b5b5bed;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 55px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 16.5px;
+    color: #fff;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px solid #6b5b5bed;
+    background-color: #2821217c;
+    transition: 1s;
+}
+
+.about-image{
+    width: 30%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+.about-page{
+    background-color: #897676ed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#75624dc5,#6b5b5bed);
+}
+
+.about-page p {
+    padding: 0 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+
+.double-spacing{ line-height: 2.0; }
+
+/* DATA ANALYSIS */
+
+.data-analysis{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.movie-facts{
+    font-size: 30px;
+    font-weight: 600;
+    color: #6b5b5bed;
+}
+
+.movie-facts p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.course-button{
+    width: 315px;
+    height: auto;
+    background-color: #6b5b5bed;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 5%;
+    padding: 15px 0px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.course-button:nth-child(1) {
+    margin-left: 185px;
+}
+
+.course-button:nth-child(2) {
+    margin-right: 185px;
+}
+
+.course-button:hover{
+    background-color: #2a2222eb;
+}
+
+.course-heading{
+    color: #fff;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 15px 0px;
+}
+
+.button-link {
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    text-align: center;
+}
+
+/* INFOGRAPHIC */
+
+.infographic{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.infographic-heading{
+    color: #6b5b5bed;
+    font-size: 15px;
+    margin-bottom: -50px;
+    text-align: center;
+}
+
+.infographic-image{
+    width: 50%;
+    max-width: 550px;
+    padding-top: -100px;
+    padding-bottom: 50px;
+    display: block;
+    margin: 0 auto;
+}
